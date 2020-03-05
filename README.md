@@ -1,6 +1,14 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-03-05 17:26:53
+ * @LastEditTime: 2020-03-05 17:38:05
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \bookkeeping-vue\README.md
+ -->
 # bookkeeping-vue
 
-> A Vue.js project
+> 一个使用VUE制作的记账本
 
 ## Build Setup
 
