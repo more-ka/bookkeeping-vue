@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+#app {
+  max-width: 440px;
+  margin: 0 auto;
+  color: black;
+  height: 100vh;
+  display: block;
+}
+h2 {
+}
+.page {
+  border: 1px solid #000;
+  height: 100vh;
+}
+
+/* 标签部分 */
+.tags {
+  border: 1px solid #000;
+  padding: 8px;
+}
+.tags .tag {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 12px;
+  display: inline-block;
+  background: lightgrey;
+  border-radius: 4px;
+}
+
+/* 备注 */
+.remarks {
+  padding: 8px;
+}
+.remarks input {
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  background: none;
+  outline: none;
+}
+/* 键盘区域 */
+.keyboard {
+  bottom: 0;
+  position: fixed;
+  max-width: 440px;
+  display: flex;
+  font-weight: bold;
+  background: #9b9b9b5c;
+  width: 100%;
+  padding-bottom: 6px;
+  font-size: 20px;
+}
+.keyboard >div >div.active{
+  background: #efefef;
+}
+.numberLock{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.numberLock > div{
+  background: #ffffff;
+  padding: 20px 0;
+  width: 30%;
+  display: flex;
+  margin: 0;
+  margin-top: 6px;
+  align-self: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.numberLock div:nth-child(10){
+  width: 62.5%;
+}
+
+.controlLock{
+  width: 20%;
+  margin-right: 6px;
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.controlLock > div{
+  padding: 20px 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controlLock > div:last-child{
+  margin-top: 6px;
+  flex-grow: 1;
+}
