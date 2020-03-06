@@ -11,42 +11,95 @@
   height: 100vh;
   display: block;
 }
-h2 {
-}
+
 .page {
   border: 1px solid #000;
-  height: 100vh;
+  height: calc(100vh - 48px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 /* 标签部分 */
 .tags {
-  border: 1px solid #000;
   padding: 8px;
 }
-.tags .tag {
-  font-size: 14px;
+.tags .tag{
+  font-size: 16px;
   font-weight: bold;
-  padding: 2px 12px;
+  padding: 4px 16px;
   display: inline-block;
-  background: lightgrey;
-  border-radius: 4px;
+  background: #efefef;
+  border-radius: 6px;
+  margin-right: 8px;
 }
-
+.tags .tag.active{
+  background: #9b9b9b5c;
+}
+/* 编辑标签 */
+.editTag{
+  padding: 8px;
+}
+.editTag span{
+  border-bottom: 1px solid black;
+}
 /* 备注 */
 .remarks {
   padding: 8px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #efefef;
 }
 .remarks input {
   border: none;
-  border-bottom: 1px solid lightgrey;
   background: none;
   outline: none;
+  font-size: 16px;
+  margin-left: 12px;
+}
+
+/* 选择栏 */
+.selectBar{
+  width: 100%;
+  display: flex;
+  font-size: 16px;
+  background: #9b9b9b5c;
+}
+.selectBar span{
+  flex: 1;
+  padding: 12px 0;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+.selectBar span.active::before{
+  content: '';
+  width: 50%;
+  height: 4px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+.selectBar span:active{
+  background: #efefef;
+}
+/* 数字输入框 */
+.numInput{
+  width: 100%;
+}
+.numInput input{
+  width: 90%;
+  border: none;
+  outline: none;
+  line-height: 48px;
+  font-size: 24px;
+  text-align:right;
+  padding: 0 5%;
 }
 /* 键盘区域 */
 .keyboard {
-  bottom: 0;
-  position: fixed;
-  max-width: 440px;
   display: flex;
   font-weight: bold;
   background: #9b9b9b5c;
@@ -54,7 +107,7 @@ h2 {
   padding-bottom: 6px;
   font-size: 20px;
 }
-.keyboard >div >div.active{
+.keyboard >div >div:active{
   background: #efefef;
 }
 .numberLock{
@@ -92,8 +145,32 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 6px;
+}
+.controlLock > div:first-child{
+  margin-top: 0;
 }
 .controlLock > div:last-child{
   margin-top: 6px;
   flex-grow: 1;
+}
+/* 导航栏 */
+.navBar{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+}
+.navBar .item{
+  height: 48px;
+  line-height: 48px;
+  flex: 1;
+  color: black;
+  text-decoration: none;
+  background: #ffffff;
+}
+.navBar .item.active{
+  color: rgb(255, 214, 85);
 }
