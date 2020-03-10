@@ -4,13 +4,13 @@
   margin: 0;
   padding: 0;
 }
-#app {
+/* #app {
   max-width: 440px;
   margin: 0 auto;
   color: black;
   height: 100vh;
   display: block;
-}
+} */
 
 .page {
   height: calc(100vh - 48px);
@@ -155,7 +155,7 @@
 }
 /* 导航栏 */
 .navBar{
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   max-width: 440px;
   width: 100%;

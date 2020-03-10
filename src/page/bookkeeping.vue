@@ -1,13 +1,13 @@
 <!--
  * @Author: your name
  * @Date: 2020-03-09 21:33:21
- * @LastEditTime: 2020-03-09 21:43:47
+ * @LastEditTime: 2020-03-10 23:40:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \bookkeeping-vue\src\page\bookkeeping.vue
  -->
 <template>
-  <div class="page">
+  <div class="bookkeepingPage">
     <section class="tags">
       <span class="tag active">衣</span>
       <span class="tag">食</span>
@@ -58,7 +58,7 @@
           <div class="content">9</div>
         </div>
         <div class="number">
-          <div class="content">9</div>
+          <div class="content">0</div>
         </div>
         <div class="number">
           <div class="content">.</div>
@@ -81,28 +81,13 @@
 
 <script>
 export default {
-  name: "bookkeeping"
-};
+  name: 'bookkeeping'
+}
 </script>
 
-<style>
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-}
-#app {
-  max-width: 440px;
-  margin: 0 auto;
-  color: black;
-  height: 100vh;
-  display: block;
-}
-
-.page {
-  border: 1px solid #000;
-  height: calc(100vh - 48px);
+<style scope>
+.bookkeepingPage {
+  height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -207,7 +192,7 @@ export default {
 
 .numberLock > div {
   background: #ffffff;
-  padding: 20px 0;
+  padding: 8px 0;
   width: 30%;
   display: flex;
   margin: 0;
@@ -228,7 +213,7 @@ export default {
   flex-direction: column;
 }
 .controlLock > div {
-  padding: 20px 0;
+  padding: 8px 0;
   background: #fff;
   display: flex;
   align-items: center;
@@ -241,25 +226,5 @@ export default {
 .controlLock > div:last-child {
   margin-top: 6px;
   flex-grow: 1;
-}
-/* 导航栏 */
-.navBar {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  text-align: center;
-  font-weight: bold;
-}
-.navBar .item {
-  height: 48px;
-  line-height: 48px;
-  flex: 1;
-  color: black;
-  text-decoration: none;
-  background: #ffffff;
-}
-.navBar .item.active {
-  color: rgb(255, 214, 85);
 }
 </style>

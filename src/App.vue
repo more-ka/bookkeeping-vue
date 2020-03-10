@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-03-05 17:26:53
- * @LastEditTime: 2020-03-09 21:44:38
+ * @LastEditTime: 2020-03-10 23:30:18
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \bookkeeping-vue\src\App.vue

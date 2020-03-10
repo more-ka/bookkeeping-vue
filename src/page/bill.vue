@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-03-09 21:48:48
- * @LastEditTime: 2020-03-09 21:50:14
+ * @LastEditTime: 2020-03-10 23:31:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \bookkeeping-vue\src\page\bill.vue
@@ -58,18 +58,14 @@
 
 <script>
 export default {
-
+  name: 'bill'
 }
 </script>
 
 <style scope>
-      *{
-      padding: 0;
-      margin: 0;
-    }
     .page{
       max-width: 440px;
-      height: calc(100vh - 48px);
+      height: calc(100vh - 50px);
       background: #ffffff;
       margin:auto;
     }
@@ -90,9 +86,8 @@ export default {
       background: #9b9b9b5c;
     }
 
-    
     .tabs{
-      width: 100%;
+      /* width: 100%; */
       font-size: 14px;
     }
     .tab ul{
@@ -117,8 +112,6 @@ export default {
       /* background: #9b9b9b5c; */
     }
 
-    .main{
-    }
     .main .item{
       padding: 12px;
     }
@@ -149,8 +142,6 @@ export default {
       flex: 1;
     }
     .item .row div:last-child{
-      text-align: right !important;
-      text-align:right;
-      text-align: center;
+      text-align: right;
     }
 </style>

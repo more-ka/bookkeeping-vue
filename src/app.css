@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 }
-#app {
+/* #app {
   max-width: 440px;
   margin: 0 auto;
   color: black;
@@ -16,11 +16,11 @@
   height: calc(100vh - 48px);
   display: flex;
   flex-direction: column;
-}
+}  */
 
 /* 导航栏 */
 .navBar{
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
   display: flex;

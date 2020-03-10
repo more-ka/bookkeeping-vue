@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-03-09 21:40:31
- * @LastEditTime: 2020-03-09 21:47:53
+ * @LastEditTime: 2020-03-10 23:11:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \bookkeeping-vue\src\page\detail.vue
@@ -57,14 +57,9 @@ export default {
 </script>
 
 <style scope>
-      * {
-      padding: 0;
-      margin: 0;
-    }
-
     .page {
       max-width: 440px;
-      height: calc(100vh - 48px);
+      height: calc(100vh - 50px);
       background: #ffffff;
       margin: auto;
     }
@@ -90,6 +85,7 @@ export default {
     .main{
       display: flex;
       padding: 12px;
+      padding-bottom: 0;
       flex-direction: column;
     }
     .main .item{
