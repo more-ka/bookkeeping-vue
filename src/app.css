@@ -26,6 +26,8 @@
   display: flex;
   text-align: center;
   font-weight: bold;
+  max-width: 440px;
+  margin: 0 auto;
 }
 .navBar .item{
   height: 48px;

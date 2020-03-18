@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-03-09 21:33:21
- * @LastEditTime: 2020-03-10 23:40:53
+ * @LastEditTime: 2020-03-18 23:42:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \bookkeeping-vue\src\page\bookkeeping.vue
@@ -85,12 +85,14 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
 .bookkeepingPage {
   height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  max-width: 440px;
+  margin: 0 auto;
 }
 
 /* 标签部分 */
@@ -192,7 +194,7 @@ export default {
 
 .numberLock > div {
   background: #ffffff;
-  padding: 8px 0;
+  padding: 12px 0;
   width: 30%;
   display: flex;
   margin: 0;
@@ -213,7 +215,7 @@ export default {
   flex-direction: column;
 }
 .controlLock > div {
-  padding: 8px 0;
+  padding: 12px 0;
   background: #fff;
   display: flex;
   align-items: center;

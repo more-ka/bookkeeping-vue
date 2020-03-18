@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-03-09 21:40:31
- * @LastEditTime: 2020-03-10 23:11:23
+ * @LastEditTime: 2020-03-19 02:13:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \bookkeeping-vue\src\page\detail.vue
@@ -56,7 +56,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
     .page {
       max-width: 440px;
       height: calc(100vh - 50px);
@@ -66,10 +66,12 @@ export default {
 
     .page .header {
       display: flex;
-      padding: 12px;
       background: #e5e5e5;
+      width: 100%;
     }
-
+    .header span{
+      padding: 12px;
+    }
     .header .month {
       width: 40%;
     }
@@ -84,17 +86,15 @@ export default {
 
     .main{
       display: flex;
-      padding: 12px;
       padding-bottom: 0;
       flex-direction: column;
     }
     .main .item{
-      width: 100%;
+      padding: 12px;
     }
     .main .item .time{
       display: flex;
-      width: 100%;
-      padding: 8px 0;
+      /* padding: 8px 0; */
       color: #888888;
     }
     .time .day{
@@ -109,7 +109,7 @@ export default {
       text-align-last: right;
     }
     .item .detail{
-      padding-left: 20px;
+      padding-left: 12px;
     }
     .item .detail .row{
       display: flex;

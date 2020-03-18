@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-03-05 17:26:53
- * @LastEditTime: 2020-03-09 21:50:35
+ * @LastEditTime: 2020-03-18 23:09:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \bookkeeping-vue\src\router\index.js
@@ -15,7 +15,7 @@ import bill from '../page/bill'
 const routes = [
   { path: '/bill', component: bill },
   { path: '/detail', component: detail },
-  {path: '/bookkeeping', component: bookkeeping}
+  { path: '/', component: bookkeeping },
 ]
 
 Vue.use(Router)

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-03-09 21:48:48
- * @LastEditTime: 2020-03-10 23:31:28
+ * @LastEditTime: 2020-03-19 02:11:09
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \bookkeeping-vue\src\page\bill.vue
@@ -62,7 +62,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
     .page{
       max-width: 440px;
       height: calc(100vh - 50px);
@@ -111,7 +111,9 @@ export default {
       background: #000;
       /* background: #9b9b9b5c; */
     }
-
+    .main{
+      padding: 0;
+    }
     .main .item{
       padding: 12px;
     }
